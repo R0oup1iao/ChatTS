@@ -92,19 +92,31 @@ deepspeed --num_gpus [YOUR_NUM_GPUS] --master_port 12345 chatts/inference_tsmllm
 
 ## 注意事项
 - 您可以使用 CPU 进行推理。然而，由于我们当前的 `ChatTS` 模型尚未实现 `kv_cache`（我们计划尽快实现），推理速度可能会显著较慢。
+<<<<<<< HEAD
 - 当前不支持 `vLLM` 推理。您可以使用 `deepspeed` 进行推理。
 
 ## 第三方依赖
+=======
+
+## 参考文献
+>>>>>>> 46b5b51 (translate)
 - QWen (https://github.com/QwenLM/Qwen2.5)
 - DeepSpeed (https://www.deepspeed.ai/)
 - RAGAS (https://github.com/explodinggradients/ragas)
 - VLLM (https://github.com/vllm-project/vllm)
 - Flash Attention (https://github.com/Dao-AILab/flash-attention)
 
+<<<<<<< HEAD
 ## 安全
 如果您发现该项目存在潜在的安全问题，或认为可能存在安全问题，请通过我们的 [安全中心](https://security.bytedance.com/src) 或 [漏洞报告邮箱](sec@bytedance.com) 通知字节跳动安全团队。
 
 请**不要**为安全漏洞创建公共 GitHub 问题。
+=======
+## 安全性
+如果您发现本项目存在潜在的安全问题，或认为可能存在安全问题，请通过我们的 [安全中心](https://security.bytedance.com/src) 或 [漏洞报告邮箱](sec@bytedance.com) 通知字节跳动安全团队。
+
+请勿为安全漏洞创建公共 GitHub 问题。
+>>>>>>> 46b5b51 (translate)
 
 ## 许可证
 本项目采用 [MIT License](LICENSE) 许可证。
