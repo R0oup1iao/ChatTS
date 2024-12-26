@@ -512,7 +512,7 @@ def generate_local_chars(attribute_pool, overall_amplitude, seq_len):
             local_char["position_end"] = local_position + drop_length
             local_char["detail"] = f"a sudden increase with an amplitude of {local_amplitude:.2f} occurred between point {local_position} and point {local_position + drop_length}, with the time series value rising from around <|{local_position - 1}|> to around <|{local_position + drop_length}|>"
             if random.random() < 0.5:
-                recover_length = random.randint(1, 10.0)
+                recover_length = random.randint(1, 10)
                 recover_amplitude = random.uniform(0, local_amplitude / 3)
                 y[local_position + drop_length: local_position + drop_length + recover_length] += generate_ts_change(recover_length, -recover_amplitude)
                 y[local_position + drop_length + recover_length:] -= recover_amplitude
@@ -528,7 +528,7 @@ def generate_local_chars(attribute_pool, overall_amplitude, seq_len):
             local_char["position_end"] = local_position + drop_length
             local_char["detail"] = f"a sudden decrease with an amplitude of {local_amplitude:.2f} occurred between point {local_position} and point {local_position + drop_length}, with the time series value falling from around <|{local_position - 1}|> to around <|{local_position + drop_length}|>"
             if random.random() < 0.5:
-                recover_length = random.randint(1, 10.0)
+                recover_length = random.randint(1, 10)
                 recover_amplitude = random.uniform(0, local_amplitude / 3)
                 y[local_position + drop_length: local_position + drop_length + recover_length] += generate_ts_change(recover_length, recover_amplitude)
                 y[local_position + drop_length + recover_length:] += recover_amplitude

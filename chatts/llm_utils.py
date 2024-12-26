@@ -26,9 +26,9 @@ from typing import *
 
 
 # Config
-MODEL_PATH = "[LOCAL_LLM_PATH]"
+MODEL_PATH = "/home/acme/hfd_ckpt/Qwen2.5-7B-Instruct"
 ctx_length = 5000
-num_gpus = 8
+num_gpus = 2
 gpu_per_model = 1
 batch_size = 32
 ENGINE = 'vllm'
