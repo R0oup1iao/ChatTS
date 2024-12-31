@@ -114,27 +114,16 @@ deepspeed --num_gpus [YOUR_NUM_GPUS] --master_port 12345 chatts/inference_tsmllm
 您可以通过修改 `demo_hf.ipynb` 中的时间序列和问题文本来尝试更多 `ChatTS` 的应用场景！
 
 ## 第三方依赖
-=======
-
-## 参考文献
->>>>>>> 46b5b51 (translate)
 - QWen (https://github.com/QwenLM/Qwen2.5)
 - DeepSpeed (https://www.deepspeed.ai/)
 - RAGAS (https://github.com/explodinggradients/ragas)
 - vLLM (https://github.com/vllm-project/vllm)
 - Flash Attention (https://github.com/Dao-AILab/flash-attention)
 
-<<<<<<< HEAD
-## 安全
-如果您发现此项目存在潜在的安全问题，或认为您可能发现了安全问题，请通过我们的 [安全中心](https://security.bytedance.com/src) 或 [漏洞报告邮箱](sec@bytedance.com) 通知字节跳动安全团队。
-
-请**不要**为安全漏洞创建公共 GitHub 问题。
-=======
 ## 安全性
 如果您发现本项目存在潜在的安全问题，或认为可能存在安全问题，请通过我们的 [安全中心](https://security.bytedance.com/src) 或 [漏洞报告邮箱](sec@bytedance.com) 通知字节跳动安全团队。
 
 请勿为安全漏洞创建公共 GitHub 问题。
->>>>>>> 46b5b51 (translate)
 
 ## 许可证
 此项目遵循 [MIT 许可证](LICENSE)。
