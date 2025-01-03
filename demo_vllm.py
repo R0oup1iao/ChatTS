@@ -27,7 +27,9 @@ ctx_length = 6000
 
 
 # Load Model with vLLM
-language_model = LLM(model=MODEL_PATH, trust_remote_code=True, max_model_len=ctx_length, tensor_parallel_size=1, gpu_memory_utilization=0.95, limit_mm_per_prompt={"timeseries": 50})
+language_model = LLM(model=MODEL_PATH, trust_remote_code=True, max_model_len=ctx_length,
+                     tensor_parallel_size=2, gpu_memory_utilization=0.95, limit_mm_per_prompt={"timeseries": 50},
+                     )
 
 # Load Time Series Data
 SEQ_LEN_1 = 256
@@ -53,7 +55,7 @@ inputs = {
 }
 
 # TODO: Test batch inference speed
-inputs = [inputs] * 100
+inputs = [inputs] * 1
 
 # Inference
 outputs = language_model.generate(inputs, sampling_params=SamplingParams(max_tokens=300))
